@@ -1,13 +1,10 @@
 $(document).ready(function () {
-  var owl = $('.owl-one')
+  var owl = $('.owl-three')
   owl.owlCarousel({
     loop: true,
     margin: 16,
     nav: false,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    autoplayHoverPause: true,
+    dots: true,
     responsive: {
       0: {
         items: 1

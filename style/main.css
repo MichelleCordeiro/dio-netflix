@@ -23,12 +23,13 @@ header .navbar-fixed-top {
   align-items: center;
   justify-content: flex-start;
   padding: 0 1.5%;
+  z-index: 99999;
 }
 
 header .logo {
   color: var(--vermelho);
   font-family: 'Arial Black', Times;
-  font-size: 1.4vw;
+  font-size: calc(14px + 0.81vw);
   margin-left: 10px;
 }
 
@@ -46,11 +47,12 @@ header nav a:hover {
   color: #aaa;
 }
 
-/* filme principal*/
+/* (hero) filme principal -------------------- */
+
 .filme-principal {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) 100%),
     url('../img/capa_casa.jpg');
-  height: 700px;
+  height: 800px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -58,14 +60,19 @@ header nav a:hover {
   align-items: flex-start;
 }
 
+.filme-principal .container {
+  width: 70%;
+  padding: 0 3%;
+}
+
 .filme-principal .titulo {
-  margin-top: 10%;
-  font-size: 2.4vw;
+  margin-top: 5%;
+  font-size: calc(14px + 2vw);
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .filme-principal .descricao {
-  font-size: 1.1vw;
+  font-size: calc(10px + 1vw);
   margin-top: 10px;
   margin-bottom: 40px;
 }
@@ -74,7 +81,8 @@ header nav a:hover {
   border: none;
   padding: 15px 30px;
   margin-right: 15px;
-  font-size: 12px;
+  font-size: calc(8px + 0.7vw);
+  font-weight: bold;
   border-radius: 5px;
 
   cursor: pointer;
@@ -108,31 +116,77 @@ header nav a:hover {
   margin-left: 20px;
 }
 
-/* carousel filmes */
-.filme-principal .container {
-  width: 70%;
-  padding: 0 1%;
+/* carousels  ----------------- */
+main {
+  padding: 0 2%;
 }
 
-.box-filme {
-  height: 100%;
+/* carousel one filmes ----------------- */
+
+.carousel-filmes {
+  margin-top: -30px;
+  padding: 0 2%;
   width: 100%;
-  display: block;
+}
+
+.carousel-filmes > .owl-item {
+  height: 200vh;
+}
+
+.flip-card {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.cont-filme {
   border-radius: 5px;
 }
 
-.carousel-filmes {
-  margin-top: 5px;
-  padding: 0 4%;
-}
-.carousel-filmes .owl-nav {
-  display: none;
+/* carousel two melhores filmes -------------- */
+
+.carousel-melhores {
+  padding-top: 2%;
 }
 
-/* carousel top melhores */
-.carousel-melhores {
-  padding: 2% 4%;
-  position: relative;
+.melhores {
+  font-size: calc(14px + 1vw);
+  font-weight: bold;
+  height: 100%;
+  margin: 20px 0 10px 0;
 }
 
 .carousel-melhores .btns {
@@ -156,14 +210,7 @@ header nav a:hover {
   cursor: pointer;
 }
 
-.melhores {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 20px 0 10px 0;
-}
-
 .top {
-  display: flex;
   flex-direction: column;
   padding-left: 0%;
 }
@@ -172,9 +219,9 @@ header nav a:hover {
   font-family: 'Shizuru';
   color: var(--vermelho);
   text-shadow: 2px 2px rgb(151, 151, 151);
-  font-size: 250px;
+  font-size: calc(50px + 6.5vw);
   position: relative;
-  top: 20%;
+  top: calc(7px + 15%);
   left: 10%;
 }
 
@@ -182,12 +229,49 @@ header nav a:hover {
   font-family: 'Shizuru';
   color: var(--vermelho);
   text-shadow: 2px 2px rgb(151, 151, 151);
-  font-size: 250px;
+  font-size: calc(45px + 6vw);
   position: relative;
-  top: 20%;
+  top: calc(8px + 15%);
+  left: 10%;
 }
 
 .top-filme {
-  padding-left: 30%;
+  padding-left: 27%;
   position: absolute;
+  border-radius: 5px;
+}
+
+/* progress bar -------------------- */
+
+.carousel-continuar {
+  padding: 2% 0 4% 0;
+}
+
+.continuar {
+  font-size: calc(14px + 1vw);
+  font-weight: bold;
+  margin: 20px 0 30px 0;
+}
+
+.progress-bar {
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.progress-bar span {
+  display: block;
+}
+
+.bar {
+  background-color: rgb(185, 185, 185);
+  border-radius: 5px;
+}
+
+.progress {
+  display: block;
+  height: 5px;
+  background: var(--vermelho);
+  border-radius: 5px;
 }

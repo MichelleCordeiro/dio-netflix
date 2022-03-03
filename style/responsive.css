@@ -1,3 +1,9 @@
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 700px) {
   header .navbar-fixed-top {
     display: flex;
@@ -5,8 +11,23 @@
   }
 
   .botao {
+    padding: 15px 18px;
     margin-top: 5px;
-    width: 300px;
+    font-size: calc(7px + 0.7vw);
+  }
+
+  .botao .assistir {
+    width: 120px;
+  }
+
+  .info {
+    width: 190px;
+  }
+
+  .number {
+    font-size: calc(90px + 6.5vw);
+    top: calc(10px + 15%);
+    left: 15%;
   }
 }
 
@@ -17,10 +38,16 @@
   .filme-principal .titulo {
     margin-top: 1%;
   }
-}
+  .botao {
+    padding: 15px 8px;
+    font-size: calc(6px + 0.7vw);
+  }
 
-@media screen and (min-width: 1000px) {
-  .descricao {
-    width: 70%;
+  .botao .assistir {
+    width: 120px;
+  }
+
+  .info {
+    width: 130px;
   }
 }
