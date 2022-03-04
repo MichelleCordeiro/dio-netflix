@@ -19,10 +19,10 @@ header .navbar-fixed-top {
   display: flex;
   position: fixed;
   width: 100%;
-  height: 5%;
+  height: 5.8%;
   align-items: center;
+  padding: 0 2.8%;
   justify-content: flex-start;
-  padding: 0 1.5%;
   z-index: 99999;
 }
 
@@ -34,13 +34,15 @@ header .logo {
 }
 
 header nav {
-  margin-left: 50px;
+  margin: 0 3%;
 }
 
 header nav a {
+  white-space: nowrap;
   text-decoration: none;
   color: #fff;
-  margin-right: 10px;
+  margin: 0 25px;
+  line-height: 2rem;
 }
 
 header nav a:hover {
@@ -52,7 +54,7 @@ header nav a:hover {
 .filme-principal {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) 100%),
     url('../img/capa_casa.jpg');
-  height: 800px;
+  height: 900px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -62,11 +64,11 @@ header nav a:hover {
 
 .filme-principal .container {
   width: 70%;
-  padding: 0 3%;
+  padding: 0 2.8%;
 }
 
 .filme-principal .titulo {
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: calc(14px + 2vw);
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
@@ -118,32 +120,33 @@ header nav a:hover {
 
 /* carousels  ----------------- */
 main {
-  padding: 0 2%;
+  padding: 0 2.8%;
 }
 
 /* carousel one filmes ----------------- */
 
 .carousel-filmes {
   margin-top: -30px;
-  padding: 0 2%;
   width: 100%;
 }
 
+.carousel-filmes .owl-two {
+  padding: 0 2.8%;
+}
+
 .carousel-filmes > .owl-item {
-  height: 200vh;
+  position: relative;
 }
 
 .flip-card {
-  cursor: pointer;
   background-color: transparent;
-  border-radius: 5px;
   perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
-  text-align: center;
+  height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -157,23 +160,18 @@ main {
 .flip-card-back {
   position: absolute;
   width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+.flip-card-front > img,
+.flip-card-backr > img {
+  border-radius: 5px;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
   transform: rotateY(180deg);
-}
-
-.cont-filme {
-  border-radius: 5px;
 }
 
 /* carousel two melhores filmes -------------- */
@@ -197,7 +195,7 @@ main {
 .carousel-melhores .prev-slide {
   float: left;
   background: var(--preta);
-  padding: 10px;
+  padding: 5px;
   align-self: center;
   cursor: pointer;
 }
@@ -212,7 +210,12 @@ main {
 
 .top {
   flex-direction: column;
-  padding-left: 0%;
+}
+
+.top-filme {
+  padding-left: 25%;
+  border-radius: 5px;
+  position: relative;
 }
 
 .number {
@@ -220,7 +223,7 @@ main {
   color: var(--vermelho);
   text-shadow: 2px 2px rgb(151, 151, 151);
   font-size: calc(50px + 6.5vw);
-  position: relative;
+  position: absolute;
   top: calc(7px + 15%);
   left: 10%;
 }
@@ -230,18 +233,10 @@ main {
   color: var(--vermelho);
   text-shadow: 2px 2px rgb(151, 151, 151);
   font-size: calc(45px + 6vw);
-  position: relative;
+  position: absolute;
   top: calc(8px + 15%);
   left: 10%;
 }
-
-.top-filme {
-  padding-left: 27%;
-  position: absolute;
-  border-radius: 5px;
-}
-
-/* progress bar -------------------- */
 
 .carousel-continuar {
   padding: 2% 0 4% 0;
@@ -274,4 +269,88 @@ main {
   height: 5px;
   background: var(--vermelho);
   border-radius: 5px;
+}
+
+/* footer -------------------- */
+
+footer {
+  max-width: 90%;
+  margin: 2% 20% 0 20%;
+}
+
+footer social {
+  margin: 1em;
+}
+
+.social ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.social ul li a {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.social ul li a:hover {
+  color: grey;
+}
+
+.social ul li a .fa {
+  font-size: 22px;
+}
+
+.conteudos .row-cols-4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.conteudos .flex-col {
+  margin: 1% 2%;
+  list-style: none;
+}
+
+.conteudos .flex-col li a {
+  flex-direction: column;
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.conteudos .flex-col li a:hover {
+  text-decoration: underline;
+}
+
+.cod {
+  display: block;
+  margin: 0 1%;
+}
+
+.cod .row {
+  padding: 1%;
+}
+
+.cod-text a {
+  text-decoration: none;
+  padding: 1%;
+  border: solid gray 1px;
+  text-align: start;
+  color: grey;
+  font-size: 15px;
+}
+
+.cod-text a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.cod-copyright {
+  color: grey;
+  font-size: 13px;
+  padding-bottom: 1%;
 }

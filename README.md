@@ -6,8 +6,6 @@
   <img src="https://img.shields.io/github/repo-size/Pleiterson/desafios-bootcamps-dio?style=social" alt="Tamanho do repositório">
   <!-- last commit -->
   <img src="https://img.shields.io/github/last-commit/Pleiterson/desafios-bootcamps-dio?style=social" alt="Último commit">
-  <!-- licence MIT -->
-  <img src="https://img.shields.io/github/license/Pleiterson/desafios-bootcamps-dio?style=social" alt="Licença MIT">
 </p>
 
 <!--Banner session-->
@@ -28,4 +26,15 @@ Desafio "Recriando a Interface do Netflix" do curso HTML Web Developer da [Digit
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png"></code>
+</p><br>
+
+<h3> 🚀 Diferenciais </h3>
+<p>
+- [X] Menu fixo transparente com alteração na transparência através da rolagem da tela (nav-scroll.js)
+- [X] Carrosséis desenvolvidos com owl:
+  - [X] O primeiro com flipcard
+  - [X] O segundo customizado para exibir as setas prev e next nas extremidades dos cartazes
+  - [X] O terceiro com barra de progresso
+- [X] Uso de fonte externa (google fonts);
+- [X] Responsividade ajustada com o uso de media queries e font-size com calc, vw e %
 </p><br>
