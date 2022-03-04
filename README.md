@@ -10,7 +10,7 @@
 
 <!--Banner session-->
 <p align="center">
-  <img src="https://hermes.digitalinnovation.one/assets/diome/logo.svg" alt="DIO" tittle="Digital Innovation One">
+  <img src="https://hermes.digitalinnovation.one/assets/diome/logo.svg" alt="DIO" tittle="Digital Innovation One" width="345">
 </p>
 
 <!--About session-->
@@ -21,7 +21,7 @@ Desafio "Recriando a Interface do Netflix" do curso HTML Web Developer da [Digit
 
 <!-- Ícones das linguagens -->
 <h3> 💻 Technologies & Tool </h3>
-<p align="center">
+<p align="left">
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
   <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
@@ -29,7 +29,7 @@ Desafio "Recriando a Interface do Netflix" do curso HTML Web Developer da [Digit
 </p><br>
 
 <h3> 🚀 Diferenciais </h3>
-<p>
+
 - [X] Menu fixo transparente com alteração na transparência através da rolagem da tela (nav-scroll.js)
 - [X] Carrosséis desenvolvidos com owl:
   - [X] O primeiro com flipcard
@@ -37,4 +37,4 @@ Desafio "Recriando a Interface do Netflix" do curso HTML Web Developer da [Digit
   - [X] O terceiro com barra de progresso
 - [X] Uso de fonte externa (google fonts);
 - [X] Responsividade ajustada com o uso de media queries e font-size com calc, vw e %
-</p><br>
+
